@@ -24,13 +24,6 @@ module.exports = {
             }
         ],
     },
-    'settings': {
-        'import/resolver': {
-            'webpack': {
-                'config': 'webpack.config.js'
-            }
-        }
-    },
     'globals': {
         'test': true,
         'expect': true,
