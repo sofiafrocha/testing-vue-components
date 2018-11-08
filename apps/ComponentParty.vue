@@ -1,6 +1,6 @@
 <template>
 <div class="a-ComponentParty">
-	<h1>Getting started with testing Vue Components</h1>
+	<h1>🎉 Getting started with testing Vue Components 🎉</h1>
 
 	<br>
 
@@ -18,9 +18,9 @@
 
 	<br>
 
-	<h2>3: Methods</h2>
+	<h2>3: Fake <span class="strikethrough">News</span>  {{ fake }} 📢</h2>
 	<h3 class="component">
-		<cat-liker></cat-liker>
+		<thing-lister @changed-fake="updateFake"></thing-lister>
 	</h3>
 </div>
 </template>
@@ -28,12 +28,24 @@
 <script>
 import Badge from '../components/Badge';
 import CatLiker from '../components/CatLiker';
+import ThingLister from '../components/ThingLister';
 
 export default {
 	name: 'ComponentParty',
 	components: {
 		badge: Badge,
 		catLiker: CatLiker,
+		thingLister: ThingLister,
+	},
+	data() {
+		return {
+			fake: 'events',
+		};
+	},
+	methods: {
+		updateFake(newFake) {
+			this.fake = newFake;
+		},
 	},
 };
 </script>
@@ -50,7 +62,14 @@ export default {
 
 	.component {
 		padding: 1rem;
-		border: 1px solid #e64a19;
+		border: 1px dotted #e64a19;
+		border-radius: 3px;
 	}
+}
+
+.strikethrough {
+	text-decoration: line-through;
+	text-decoration-style: double;
+	opacity: 0.5;
 }
 </style>
