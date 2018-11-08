@@ -36,6 +36,19 @@
 	<h3 class="component">
 		<query-shower></query-shower>
 	</h3>
+
+	<br>
+
+	<h2>6: Stores 🏬</h2>
+	<h3 class="component">
+	</h3>
+
+	<br>
+
+	<h2>7: APIs? Ain't nobody got time for that 💁</h2>
+	<h3 class="component">
+		<animal-lover></animal-lover>
+	</h3>
 </div>
 </template>
 
@@ -45,6 +58,7 @@ import CatLiker from '../components/CatLiker';
 import ThingLister from '../components/ThingLister';
 import TerribleCalculator from '../components/TerribleCalculator';
 import QueryShower from '../components/QueryShower';
+import AnimalLover from '../components/AnimalLover';
 
 export default {
 	name: 'ComponentParty',
@@ -54,6 +68,7 @@ export default {
 		thingLister: ThingLister,
 		terribleCalculator: TerribleCalculator,
 		queryShower: QueryShower,
+		animalLover: AnimalLover,
 	},
 	data() {
 		return {
