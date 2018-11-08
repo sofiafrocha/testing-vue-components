@@ -19,7 +19,7 @@ describe('Badge Component', () => {
 				value: 3,
 			},
 		});
-		expect(component.html()).toContain('3</div>');
+		expect(component.html()).toContain('>3</div>');
 	});
 
 	it('has a special class when "has-new" is passed', () => {

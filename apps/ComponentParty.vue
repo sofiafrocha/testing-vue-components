@@ -1,20 +1,32 @@
 <template>
 <div class="a-ComponentParty">
 	<h1>Getting started with testing Vue Components</h1>
+
+	<br>
+
 	<h2>Component 1: The Basic Badge</h2>
 	<h3 class="component">
 		Your Notifications <badge :value="8" :has-new="true"></badge>
+	</h3>
+
+	<br>
+
+	<h2>Component 2: Computed Stuff</h2>
+	<h3 class="component">
+		<cat-liker></cat-liker>
 	</h3>
 </div>
 </template>
 
 <script>
 import Badge from '../components/Badge';
+import CatLiker from '../components/CatLiker';
 
 export default {
 	name: 'ComponentParty',
 	components: {
 		badge: Badge,
+		catLiker: CatLiker,
 	},
 };
 </script>
