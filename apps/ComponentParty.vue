@@ -29,6 +29,13 @@
 	<h3 class="component">
 		<terrible-calculator></terrible-calculator>
 	</h3>
+
+	<br>
+
+	<h2>5: Doing things before you do them 🤔</h2>
+	<h3 class="component">
+		<query-shower></query-shower>
+	</h3>
 </div>
 </template>
 
@@ -37,6 +44,7 @@ import Badge from '../components/Badge';
 import CatLiker from '../components/CatLiker';
 import ThingLister from '../components/ThingLister';
 import TerribleCalculator from '../components/TerribleCalculator';
+import QueryShower from '../components/QueryShower';
 
 export default {
 	name: 'ComponentParty',
@@ -45,6 +53,7 @@ export default {
 		catLiker: CatLiker,
 		thingLister: ThingLister,
 		terribleCalculator: TerribleCalculator,
+		queryShower: QueryShower,
 	},
 	data() {
 		return {

@@ -34,5 +34,6 @@ module.exports = {
         'document': true,
         'jest': true,
         'it': true,
+        'beforeAll': true,
     },
 }
