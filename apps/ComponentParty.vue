@@ -11,7 +11,7 @@
 
 	<br>
 
-	<h2>2: Computed Stuff and Methods</h2>
+	<h2>2: Computed Stuff and Methods 🤖</h2>
 	<h3 class="component">
 		<cat-liker></cat-liker>
 	</h3>
@@ -22,6 +22,13 @@
 	<h3 class="component">
 		<thing-lister @changed-fake="updateFake"></thing-lister>
 	</h3>
+
+	<br>
+
+	<h2>4: Stalking methods 👀</h2>
+	<h3 class="component">
+		<terrible-calculator></terrible-calculator>
+	</h3>
 </div>
 </template>
 
@@ -29,6 +36,7 @@
 import Badge from '../components/Badge';
 import CatLiker from '../components/CatLiker';
 import ThingLister from '../components/ThingLister';
+import TerribleCalculator from '../components/TerribleCalculator';
 
 export default {
 	name: 'ComponentParty',
@@ -36,6 +44,7 @@ export default {
 		badge: Badge,
 		catLiker: CatLiker,
 		thingLister: ThingLister,
+		terribleCalculator: TerribleCalculator,
 	},
 	data() {
 		return {
