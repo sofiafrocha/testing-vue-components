@@ -1,11 +1,12 @@
 <template>
 	<div>
-		<p>How many cats do you have?</p>
+		<p>How many 🐱s do you have?</p>
 		<hr>
 		<div>
-			<p class="answer">{{ answer }}</p>
+			<p class="answer"><em>{{ answer }}</em></p>
 			<button type="button" @click="cats++">More cats</button>
 			<button type="button" @click="cats--">Less cats</button>
+			<button type="button" @click="reset">Reset</button>
 		</div>
 	</div>
 </template>
@@ -17,6 +18,11 @@ export default {
 		return {
 			cats: 0,
 		};
+	},
+	methods: {
+		reset() {
+			this.cats = 0;
+		},
 	},
 	computed: {
 		answer() {

@@ -4,14 +4,21 @@
 
 	<br>
 
-	<h2>Component 1: The Basic Badge</h2>
+	<h2>1: The Basic Badge</h2>
 	<h3 class="component">
 		Your Notifications <badge :value="8" :has-new="true"></badge>
 	</h3>
 
 	<br>
 
-	<h2>Component 2: Computed Stuff</h2>
+	<h2>2: Computed Stuff and Methods</h2>
+	<h3 class="component">
+		<cat-liker></cat-liker>
+	</h3>
+
+	<br>
+
+	<h2>3: Methods</h2>
 	<h3 class="component">
 		<cat-liker></cat-liker>
 	</h3>

@@ -36,4 +36,18 @@ describe('CatLiker Component', () => {
 		expect(component.vm.answer).toBe('I have 1 cat.');
 		expect(component.html()).toContain('I have 1 cat.');
 	});
+
+	it('calling reset() reset the number of cats to zero', () => {
+		const component = mount(CatLiker);
+
+		component.setData({
+			cats: 23,
+		});
+
+		expect(component.vm.cats).toBe(23);
+
+		component.vm.reset();
+
+		expect(component.vm.cats).toBe(0);
+	});
 });
