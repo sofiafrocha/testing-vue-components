@@ -1,11 +1,11 @@
 <template>
 	<div>
-		<ol>
+		<ol class="c-TodoStoreFront">
 			<li v-for="(item, index) in todos" :key="item"
 				@click="removeItem(index)">
 				{{ item }}
 			</li>
-			<li v-show="todos.length === 0">
+			<li v-show="todos.length === 0" class="no-items">
 				<em>No items. Add some below.</em>
 			</li>
 		</ol>
