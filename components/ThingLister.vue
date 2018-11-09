@@ -12,7 +12,7 @@
 
 <script>
 export default {
-	name: 'Badge',
+	name: 'ThingLister',
 	data() {
 		return {
 			currentText: '',

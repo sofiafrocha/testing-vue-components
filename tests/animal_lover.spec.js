@@ -6,6 +6,7 @@ import MockData from './mock_data.js';
 
 const localVue = createLocalVue();
 localVue.use(VueResource);
+
 localVue.use(VueResourceMock, MockData);
 
 describe('AnimalLover Component', () => {
@@ -27,6 +28,7 @@ describe('AnimalLover Component', () => {
 
 		component.vm.getPicture().then(() => {
 			expect(component.vm.failed).toBeFalsy();
+			// console.log('!!!!!', component.vm.url);
 		}).catch((err) => {
 			console.log('ups.', err);
 		});
@@ -42,7 +44,7 @@ describe('AnimalLover Component', () => {
 		expect(component.vm.failed).toBeNull();
 
 		component.vm.getPicture().then(() => {}).catch(() => {
-			expect(component.vm.failed).toBeFalsy();
+			expect(component.vm.failed).toBeTruthy();
 		});
 	});
 });

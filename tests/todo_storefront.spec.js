@@ -1,6 +1,7 @@
 import { mount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
 import TodoStorefront from '../components/TodoStorefront';
+
 const minify = require('html-minifier').minify;
 
 const localVue = createLocalVue();

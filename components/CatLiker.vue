@@ -13,7 +13,7 @@
 
 <script>
 export default {
-	name: 'Badge',
+	name: 'CatLiker',
 	data() {
 		return {
 			cats: 0,

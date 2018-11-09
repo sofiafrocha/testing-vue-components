@@ -2,7 +2,7 @@ export default {
 	// eslint-disable-next-line
 	['GET http(s)\\://random.dog/woof.json'] () {
 		const body = {
-			url: 'https://random.dog/20549-24554-21155.jpg',
+			url: 'https://random.dog/this-is-not-really-a-picture.jpg',
 		};
 		return {
 			body,

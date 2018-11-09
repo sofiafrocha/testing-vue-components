@@ -11,10 +11,10 @@ describe('TerribleCalculator Component', () => {
 
 	it('calls the getRandomNumber method when the Randomize button is clicked', () => {
 		const component = mount(TerribleCalculator);
+		const btn = component.find('button');
 
 		component.setMethods({ getARandomNumber: jest.fn() });
 
-		const btn = component.find('button');
 		btn.trigger('click');
 
 		expect(component.vm.getARandomNumber).toBeCalledTimes(2);

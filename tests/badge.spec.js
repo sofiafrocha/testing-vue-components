@@ -10,6 +10,8 @@ describe('Badge Component', () => {
 		});
 		const html = component.html();
 
+		// console.log('html', html);
+
 		expect(html).toBeDefined();
 	});
 
