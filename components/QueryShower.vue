@@ -1,6 +1,6 @@
 <template>
 	<div>
-		{{ getQueryValue('here') }}
+		<p>{{ message }}</p>
 	</div>
 </template>
 
@@ -23,6 +23,18 @@ export default {
 				}
 			}
 			return '';
+		},
+	},
+	computed: {
+		isAdmin() {
+			return window.isAdmin;
+		},
+		message() {
+			if (this.isAdmin) {
+				return `You are an admin, and your query is ${this.getQueryValue('name')}`;
+			}
+
+			return `You are a normal user, and your query is ${this.getQueryValue('name')}`;
 		},
 	},
 };
