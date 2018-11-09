@@ -39,8 +39,9 @@
 
 	<br>
 
-	<h2>6: Stores 🏬</h2>
+	<h2>6: Stores and comparing HTML🏬</h2>
 	<h3 class="component">
+		<todo-store-front></todo-store-front>
 	</h3>
 
 	<br>
@@ -59,6 +60,7 @@ import ThingLister from '../components/ThingLister';
 import TerribleCalculator from '../components/TerribleCalculator';
 import QueryShower from '../components/QueryShower';
 import AnimalLover from '../components/AnimalLover';
+import TodoStorefront from '../components/TodoStorefront';
 
 export default {
 	name: 'ComponentParty',
@@ -69,6 +71,7 @@ export default {
 		terribleCalculator: TerribleCalculator,
 		queryShower: QueryShower,
 		animalLover: AnimalLover,
+		todoStoreFront: TodoStorefront,
 	},
 	data() {
 		return {

@@ -3,9 +3,11 @@ module.exports = {
 	rootDir: './',
 	moduleFileExtensions: ['vue', 'js', 'jsx'],
 	moduleNameMapper: {
-		'^@/(.*)$': '<rootDir>src/$1',
+		'^@/(.*)$': '<rootDir>/$1',
 	},
 	roots: [
+		'<rootDir>components',
+		'<rootDir>utils',
 		'<rootDir>tests',
 	],
 	transform: {
