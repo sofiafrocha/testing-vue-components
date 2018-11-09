@@ -24,6 +24,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-vue": "^4.7.1",
     "jest": "^23.6.0",
+    "lodash": "^4.17.11",
     "pug": "^2.0.3",
     "sass": "^1.14.3",
     "vue-jest": "^3.0.0",
